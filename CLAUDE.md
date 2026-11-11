@@ -38,6 +38,7 @@ La barre de navigation et le footer sont **dupliqués dans chaque page**. Une mo
 Dans `index.html`, section `.certs`, liste `<ul class="badges">` : ajouter un `<li>` sur le modèle des badges existants.
 
 - Image : `assets/img/badge-<nom>.png`, en **PNG 288×288 aux coins arrondis** (rayon d'environ 28 px, fond transparent), affichée en 96×96.
+- Badges Claude Academy : partir du PDF officiel, dont l'image fait 3300×2250. Masquer le logo « Claude Academy » et la mention « ISSUED … », puis recadrer en carré sur la forme beige, soit la zone `(701, 176, 2601, 2076)` commune à tous les badges. Tous les badges Academy du site gardent ainsi le même cadrage.
 - Lien : URL de vérification officielle (Credly, `academy.claude.com/verify/…`), avec un `title="Vérifier sur …"`.
 - Légende : `Nom<br>mois abrégé année`, par exemple `nov. 2026`.
 - Une certification obtenue doit sortir du bloc `.goals` (« En projet ») si elle y figurait.
