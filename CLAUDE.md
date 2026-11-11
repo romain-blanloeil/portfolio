@@ -41,7 +41,7 @@ Dans `index.html`, section `.certs`, liste `<ul class="badges">` : ajouter un `<
 - Badges Claude Academy : partir du PDF officiel, dont l'image fait 3300×2250. Masquer le logo « Claude Academy » et la mention « ISSUED … », puis recadrer en carré sur la forme beige, soit la zone `(701, 176, 2601, 2076)` commune à tous les badges. Tous les badges Academy du site gardent ainsi le même cadrage.
 - Lien : URL de vérification officielle (Credly, `academy.claude.com/verify/…`), avec un `title="Vérifier sur …"`.
 - Légende : `Nom<br>mois abrégé année`, par exemple `nov. 2026`.
-- Une certification obtenue doit sortir du bloc `.goals` (« En projet ») si elle y figurait.
+- Les certifications en projet apparaissent dans la même liste, sous forme de « badge fantôme » (`<div class="badge badge-todo">` avec un `.badge-slot` en pointillés et la légende `en projet`), placés après les badges obtenus. Une fois la certification obtenue, on remplace son badge fantôme par un vrai badge.
 
 ## Vérifier une modification
 
